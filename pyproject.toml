@@ -1,0 +1,21 @@
+[project]
+name = "organizations-catalog-fastapi"
+version = "0.1.0"
+description = "REST API for Organization Directory with JWT based authentication."
+authors = [
+  { name = "Your Name", email = "your.email@example.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "uvicorn>=0.34.3",
+    "uv>=0.7.9",
+    "pydantic>=1.9.0",
+    "sqlalchemy>=1.4.0",
+    "alembic>=1.7.0",
+    "python-jose[cryptography]>=3.3.0",
+    "pydantic-settings>=2.9.1",
+    "fastapi[standard]>=0.115.12",
+
+]
+[tool.uv]
+# uv-specific configuration options, if needed.
