@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from domains.activity import repository, schemas
+from app.domains.activity import repository, schemas
 
 def get_activity_details(db: Session, activity_id: int):
     activity = repository.get_activity(db, activity_id)
